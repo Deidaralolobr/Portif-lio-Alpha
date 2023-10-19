@@ -1,0 +1,143 @@
+body {
+    background-color: #333;
+    color: #ecece1;
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a,
+.navbar li button {
+    display: block;
+    color: #def5d9;
+    text-align: center;
+    padding: 14px 50px;
+    /* Aumenta do espaçamento */
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #3a3a3a;
+}
+
+.btn {
+    display: block;
+    color: #130e0e;
+    text-align: center;
+    padding: 50px 50px;
+    /* Aumento do espaçamento */
+    text-decoration: none;
+    background-color: #1b2c04;
+}
+
+.section::before {
+    content: "";
+    display: block;
+    height: 70px; /* Deve ser igual à altura da sua barra de navegação */
+    margin: -70px 0 0; /* Deve ser o mesmo valor que height, mas negativo */
+    visibility: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text {
+    font-size: 1.5em; /* Ajustar conforme necessário */
+    color: #ecece1;
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Adiciona espaço igual entre os itens */
+}
+
+
+.image img {
+    max-width: 50%;
+    height: 50%;
+    border-radius: 70%;
+}
+
+
+form {
+    width: 50%; /* Ajuste conforme necessário */
+    margin: auto;
+    margin-bottom: 10%;
+    
+}
+
+form label {
+    margin-bottom: auto;
+    color: #fff;
+}
+
+form input[type="text"],
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    margin-bottom: 10%;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.redes-sociais img {
+    width: 80px;
+    /* Ajuste conforme necessário */
+    height: 70px;
+    /* Ajuste conforme necessário */
+}
+
+.image img, .redes-sociais img {
+    transition: transform 0.3s ease;
+}
+
+.image img:hover, .redes-sociais img:hover {
+    transform: scale(1.1);
+}
+body.light-mode {
+    background-color: #fff; /* Cor de fundo clara */
+    color: #ffffff; /* Cor de texto escura */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
