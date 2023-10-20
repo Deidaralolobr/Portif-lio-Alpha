@@ -9,6 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function toggleLightMode() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
+    var flashbang = document.body;
+    flashbang.classList.toggle("light-mode");
 }

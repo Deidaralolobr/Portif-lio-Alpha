@@ -3,6 +3,8 @@ body {
     color: #ecece1;
     font-family: 'Courier New', monospace;
     font-style: italic;
+    line-height: 1.6; /* Adiciona espaço entre as linhas para melhorar a legibilidade */
+    margin: 10 ; /* Adiciona margens laterais ao corpo do documento */
 }
 
 .navbar {
@@ -10,34 +12,40 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
+    background-color: #111; /* Move para .navbar para evitar repetição */
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 10%;
     overflow: hidden;
-    background-color: #111;
 }
 
 .navbar li {
     float: left;
 }
 
+.navbar li:last-child { /* Move o botão para o final da navbar */
+    float: right;
+}
+
+h2 { /* Centraliza os títulos */
+    text-align: center;
+}
 .navbar li a,
 .navbar li button {
     display: block;
     color: #def5d9;
     text-align: center;
-    padding: 14px 50px;
-    /* Aumenta do espaçamento */
+    padding: 14px 16px; /* Reduz o padding para um tamanho mais padrão */
     text-decoration: none;
 }
 
-.navbar li a:hover {
+.navbar li a:hover,
+.navbar li button:hover { /* Adiciona hover para botões também */
     background-color: #3a3a3a;
 }
-
 .btn {
     display: block;
     color: #130e0e;
@@ -52,15 +60,14 @@ body {
     content: "";
     display: block;
     height: 70px; /* Deve ser igual à altura da sua barra de navegação */
-    margin: -70px 0 0; /* Deve ser o mesmo valor que height, mas negativo */
+    margin: -70px 0 2; /* Deve ser o mesmo valor que height, mas negativo */
     visibility: hidden;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 5%;
 }
 
 .text {
     font-size: 1.5em; /* Ajustar conforme necessário */
-    color: #ecece1;
+    margin-left: 5%;
 }
 
 
@@ -75,13 +82,15 @@ body {
     max-width: 50%;
     height: 50%;
     border-radius: 70%;
+    margin-left: 5%;
 }
 
 
 form {
-    width: 50%; /* Ajuste conforme necessário */
+    width: 10%; /* Ajuste conforme necessário */
     margin: auto;
     margin-bottom: 10%;
+    margin-top: 5%;
     
 }
 
@@ -103,13 +112,13 @@ form input[type="submit"] {
     margin-bottom: 10%;
     border: none;
     border-radius: 5px;
-    background-color: #444;
-    color: #fff;
+    background-color: #2b2b2b;
+    color: #ece0ea;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #555; /* Adiciona um hover ao botão de envio */
 }
 
 .redes-sociais img {
@@ -127,8 +136,19 @@ form input[type="submit"]:hover {
     transform: scale(1.1);
 }
 body.light-mode {
-    background-color: #fff; /* Cor de fundo clara */
-    color: #ffffff; /* Cor de texto escura */
+    background-color: #b9aaaa; /* Cor de fundo clara */
+    color: #1f1c1c; /* Cor de texto escura */
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body.light-mode h2 {
+    color: #272323; /* Cor de texto escura */
+}
+
+body.light-mode form {
+    background-color: #252525; /* Cor de fundo escura */
+    color: #252323; /* Cor de texto clara */
 }
 
 footer {
